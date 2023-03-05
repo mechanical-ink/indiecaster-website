@@ -1,0 +1,42 @@
+.icon::before {
+  background-color: var(--color-brand-primary);
+  content: "";
+  display: block;
+  height: 2.5rem;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  width: 2.5rem;
+}
+
+.icon-shortcodes::before {
+  -webkit-mask-image: url("../../assets/icons/mic.svg");
+  mask-image: url("../../assets/icons/mic.svg");
+}
+
+.icon-kofi::before {
+  -webkit-mask-image: url("../../assets/icons/kofi.svg");
+  mask-image: url("../../assets/icons/kofi.svg");
+}
+
+.icon-config::before {
+  -webkit-mask-image: url("../../assets/icons/config.svg");
+  mask-image: url("../../assets/icons/config.svg");
+}
+
+.icon-tinacms::before {
+  height: 3.3rem;
+  -webkit-mask-image: url("../../assets/icons/tinacms.svg");
+  mask-image: url("../../assets/icons/tinacms.svg");
+}
+
+.icon-docs::before {
+  -webkit-mask-image: url("../../assets/icons/person-workspace.svg");
+  mask-image: url("../../assets/icons/person-workspace.svg");
+}
+
+@media screen and (min-width: 47.9375em) {
+  .icon-docs::before {
+    -webkit-mask-image: url("../../assets/icons/docs.svg");
+    mask-image: url("../../assets/icons/docs.svg");
+  }
+}

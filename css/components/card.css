@@ -1,0 +1,23 @@
+.feature-card {
+  align-items: center;
+  display: flex;
+  background-color: var(--color-brand-100);
+  color: var(--color-brand-900);
+  gap: var(--layout-gap-default);
+  padding: var(--layout-padding-default);
+}
+
+.feature-card.icon::before {
+  flex: 0 0 2.5rem;
+}
+
+@media screen and (min-width: 47.9375em) {
+  .feature-card.icon-docs::before {
+    flex: 0 0 5rem;
+    width: 20rem;
+  }
+}
+
+.feature-card p {
+  flex: 1 1 max-content;
+}

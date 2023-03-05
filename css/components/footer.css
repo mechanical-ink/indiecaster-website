@@ -1,0 +1,28 @@
+.page-footer {
+  background-color: var(--color-brand-primary);
+  color: var(--color-neutral-inverted);
+  padding: var(--layout-padding-medium) var(--layout-padding-default);
+  text-align: center;
+}
+
+.page-footer::before {
+  background-color: var(--color-neutral-inverted);
+  content: "";
+  display: block;
+  height: 4rem;
+  -webkit-mask-image: url("../../assets/icon.svg");
+  mask-image: url("../../assets/icon.svg");
+  margin: var(--layout-gap-narrow) auto;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  width: 4rem;
+}
+
+.page-footer a:link,
+.page-footer a:visited {
+  color: var(--color-neutral-inverted);
+}
+
+.footer-links li {
+  margin-bottom: var(--layout-gap-narrow);
+}

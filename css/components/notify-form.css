@@ -1,0 +1,31 @@
+.notify-form {
+  display: flex;
+  margin-top: var(--layout-gap-default);
+}
+
+@media screen and (min-width: 47.9375em) {
+  .notify-form {
+    max-width: initial;
+  }
+}
+
+.form-element-group {
+  display: inline-block;
+  flex: 1 1 60%;
+}
+
+.notify-form input {
+  border: var(--border-input-border);
+  padding: var(--layout-padding-narrow);
+  width: 100%;
+}
+
+.notify-form .button-primary {
+  display: flex;
+  flex: 1 1 40%;
+  grid-gap: var(--layout-gap-narrow);
+  gap: var(--layout-gap-narrow);
+  justify-content: center;
+  left: -0.3rem;
+  position: relative;
+}

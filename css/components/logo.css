@@ -1,0 +1,14 @@
+.logo {
+  background: transparent url("../../assets/logo.svg") center center no-repeat;
+  background-size: 320px 109px;
+  height: 109px;
+  width: 320px;
+}
+
+@media screen and (min-width: 47.9375em) {
+  .logo {
+    background-size: 350px 119px;
+    height: 119px;
+    width: 350px;
+  }
+}

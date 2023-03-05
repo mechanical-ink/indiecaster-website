@@ -1,0 +1,30 @@
+.notify-me {
+  background-color: var(--color-brand-900);
+  color: var(--color-brand-100);
+  padding: var(--layout-padding-medium) var(--layout-padding-default);
+}
+
+.notify-me-content {
+  max-width: 46.75rem;
+}
+
+@media screen and (min-width: 63.9375em) {
+  .notify-me {
+    align-items: center;
+    display: flex;
+    gap: var(--layout-gap-default);
+    justify-content: center;
+  }
+
+  .notify-me::before {
+    background-color: var(--color-brand-primary);
+    content: "";
+    display: block;
+    height: 128px;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    -webkit-mask-image: url("../../assets/icons/gift.svg");
+    mask-image: url("../../assets/icons/gift.svg");
+    width: 128px;
+  }
+}

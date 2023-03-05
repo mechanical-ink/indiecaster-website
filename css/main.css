@@ -1,0 +1,173 @@
+@import "./components/logo.css";
+@import "./components/buttons.css";
+@import "./components/card.css";
+@import "./components/icons.css";
+@import "./components/spinner.css";
+
+@import "./components/page-header.css";
+@import "./components/notify-me.css";
+@import "./components/notify-form.css";
+@import "./components/features.css";
+@import "./components/footer.css";
+
+:root {
+  --border-primary-button-border: 0.3rem solid var(--color-brand-primary);
+  --border-input-border: 0.3rem solid var(--color-brand-50);
+
+  --color-brand-primary: #365aa9;
+
+  --color-brand-900: #031130;
+  --color-brand-300: #7b96d2;
+  --color-brand-100: #d4dff7;
+  --color-brand-50: #edf0f7;
+
+  --color-neutral-900: #0e131e;
+  --color-neutral-inverted: #fff;
+
+  --layout-gap-narrow: 1rem;
+  --layout-gap-default: 1.5rem;
+  --layout-gap-medium: 2.5rem;
+  --layout-gap-wide: 3.5rem;
+
+  --layout-padding-narrow: 0.5rem;
+  --layout-padding-default: 1.5rem;
+  --layout-padding-medium: 2.5rem;
+
+  --layout-max-page-width: 75rem;
+
+  --typography-heading-line-height: 1.2;
+
+  --typography-size-xxl: 2.488rem;
+  --typography-size-xl: 2.074rem;
+  --typography-size-large: 1.728rem;
+  --typography-size-medium: 1.44rem;
+  --typography-size-small-medium: 1.2rem;
+  --typography-size-default: 1rem;
+  --typography-size-small: 0.833rem;
+}
+
+@media screen and (min-width: 63.9375em) {
+  :root {
+    --typography-size-xxl: 4.209rem;
+    --typography-size-xl: 3.157rem;
+    --typography-size-large: 2.369rem;
+    --typography-size-medium: 1.777rem;
+    --typography-size-small-medium: 1.333rem;
+    --typography-size-default: 1rem;
+    --typography-size-small: 0.75rem;
+  }
+}
+
+body {
+  background-color: var(--color-brand-50);
+  color: var(--color-neutral-900);
+  font: 100%/1.75 sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: -0.0275em;
+  line-height: var(--typography-heading-line-height);
+}
+
+h1 {
+  font-size: var(--typography-size-xxl);
+}
+
+h2 {
+  font-size: var(--typography-size-xl);
+}
+
+h3 {
+  font-size: var(--typography-size-large);
+}
+
+h4 {
+  font-size: var(--typography-size-medium);
+}
+
+a:link {
+  color: var(--color-brand-primary);
+}
+
+a:visited {
+  color: var(--color-brand-900);
+}
+
+.lead-heading {
+  color: var(--color-brand-primary);
+  margin: var(--layout-gap-medium) 0;
+}
+
+.lead {
+  font-size: var(--typography-size-small-medium);
+  margin-top: var(--layout-gap-narrow);
+}
+
+.status-message {
+  font-size: var(--typography-size-large);
+  line-height: 1.2;
+}
+
+/* hiding the outline as there is no need for a visual indication */
+.status-message:focus {
+  outline: 0;
+}
+
+/* highlight a word or part of a sentence */
+.dark-highlight {
+  color: var(--color-brand-900);
+}
+
+/* constrain and center the content */
+.girdle {
+  margin: auto;
+  max-width: var(--layout-max-page-width);
+  padding: var(--layout-padding-default);
+}
+
+/* Reset some list default styling. Useful when creating custom styled lists */
+.reset-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Reset some button defaults. Useful when creating custom styled buttons */
+.ghost-button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+/* We use display: none; because we _do_ want to hide the tab panel from 
+   everyone _including_ screen readers. */
+.hidden {
+  display: none;
+}
+
+/* hides from everyone except screen readers */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* reverts the visually-hidden styling */
+.revert-visually-hidden {
+  position: initial;
+  width: initial;
+  height: initial;
+  margin: initial;
+  padding: initial;
+  overflow: initial;
+  clip: initial;
+  border: initial;
+}

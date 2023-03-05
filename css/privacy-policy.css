@@ -1,0 +1,13 @@
+.page-header::after {
+  display: none;
+}
+
+main p {
+  margin: var(--layout-gap-default) 0;
+}
+
+@media screen and (min-width: 63.9375em) {
+  .girdle.page-header {
+    margin: var(--layout-gap-narrow) auto;
+  }
+}

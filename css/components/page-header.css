@@ -1,0 +1,36 @@
+@media screen and (min-width: 47.9375em) {
+  .page-header {
+    display: flex;
+  }
+
+  .page-header-content {
+    flex: 1 1 calc(100vw - 350px);
+  }
+
+  .page-header::after {
+    background: transparent url("../../assets/hero.png") center center no-repeat;
+    background-size: cover;
+    content: "";
+    display: block;
+    height: 250px;
+    width: 250px;
+  }
+}
+
+@media screen and (min-width: 63.9375em) {
+  .girdle.page-header {
+    grid-gap: var(--layout-gap-medium);
+    gap: var(--layout-gap-medium);
+    margin: var(--layout-gap-wide) auto;
+  }
+
+  .page-header-content {
+    flex: 1 1 calc(100vw - 700px);
+  }
+
+  .page-header::after {
+    background-size: contain;
+    height: auto;
+    width: 500px;
+  }
+}
