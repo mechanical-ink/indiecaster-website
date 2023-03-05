@@ -5,11 +5,15 @@ const handleSubmit = (event) => {
   const initialState = document.querySelector(".initial-state");
   const myForm = event.target;
   const formData = new FormData(myForm);
+  const loader = document.querySelector(".loading");
+
   const statusMessage = document.querySelector(".status-message");
   const errorMessage =
     "Oh no! There was a problem submitting your information. Please try again later.";
   const successMessage =
     "Thank you for your your interest! We will be in touch soon.";
+
+  loader.classList.toggle("hidden");
 
   fetch("/", {
     method: "POST",
@@ -31,6 +35,7 @@ const handleSubmit = (event) => {
       statusMessage.classList.remove("hidden");
       statusMessage.focus();
       initialState.classList.add("hidden");
+      loader.classList.toggle("hidden");
     });
 };
 
