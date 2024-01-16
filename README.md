@@ -1,2 +1,2 @@
 # indiecastor
-A Hugo template for indie podcasters
+An Astro template for indie podcasters
